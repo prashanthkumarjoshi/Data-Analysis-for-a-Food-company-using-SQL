@@ -848,7 +848,15 @@ ORDER BY
 <br><strong>SQL Code</strong>
 
   ```sql
-
+SELECT
+	r.city,
+	SUM(total_amount) AS revenue,
+	RANK() OVER (ORDER BY SUM(total_amount) DESC) AS RANK
+FROM
+	orders o
+JOIN resturants r ON o.resturant_id = r.resturant_id
+GROUP BY
+	1	
 
   ```
 </details>
