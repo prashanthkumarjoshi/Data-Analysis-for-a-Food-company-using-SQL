@@ -171,7 +171,7 @@ HAVING
   ```
 </details>
 <details>
-<summary><strong>Expected Output</strong>:Retrieving the Customername and Average order value(AOV).</summary>
+<summary><strong>Expected Output</strong>: Retrieving the Customername and Average order value(AOV).</summary>
 <br><strong>Query Output</strong>
  <br> <img src="https://github.com/prashanthkumarjoshi/SQL_PROJECT_3/blob/main/images/Q_3_output.png">
 </details>
