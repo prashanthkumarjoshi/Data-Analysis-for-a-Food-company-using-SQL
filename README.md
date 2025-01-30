@@ -49,12 +49,11 @@ Solve day-to-day complex business problems of online food delivery business usin
 Develop complex queries to analyze and retrieve specific data:
 
 #### Business problems and Queries for solution
-### Easy to Medium (10 Questions)
-Q### Q1.Write a Query to find the top 5 most frequently ordered dishes by customer called  "Akhil Reddy" in the last 1 year
+### Q1.Write a Query to find the top 5 most frequently ordered dishes by customer called  "Akhil Reddy" in the last 1 year
 - **Description**: Return the records of last 1 year with customer_id, customer_name,dishes and total count of dishes.
 - **Expected Output**: A list of top 5 most frequently orderd dishes by Customer Name called "Akhil Reddy".
 <details>
-  <summary>Click here to view the SQL code</summary>
+  <summary>
 
   ```sql
   SELECT
@@ -84,6 +83,7 @@ Q### Q1.Write a Query to find the top 5 most frequently ordered dishes by custom
     ) AS t1
   WHERE
     RANK <= 5;
+</summary>
 </details>
 ### Q2. Popular time slots
 - **Description**: --Identify the time slots during which more orders are placed.Based on 2 hour interval.
