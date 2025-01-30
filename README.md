@@ -92,11 +92,15 @@ Develop complex queries to analyze and retrieve specific data:
  <br> <img src="https://github.com/prashanthkumarjoshi/SQL_PROJECT_3/blob/main/images/Q_1_output.png" height="200">
 </details>
     
-### Q2. Popular time slots
-- **Description**: --Identify the time slots during which more orders are placed.Based on 2 hour interval.
-- **Expected Output**: Creating time slot for 2 hours using 'Order time' and total number of orders during the slot.
-- **FIRST APPROACH**
-```Sql
+
+### Q2. Write a query to find the Popular time slots.
+<details><summary>
+<strong>Description</strong>: Identify the time slots during which more orders are placed.Based on 2 hour interval.</summary>
+<br><strong>SQL Code</strong>
+
+  ```sql
+--FIRST APPROACH--
+
 SELECT 
 	CASE
 		when EXTRACT (HOUR FROM order_time) between 0 and 1 then '00:00:00 - 02:00:00'
@@ -119,8 +123,28 @@ GROUP BY
 	1
 ORDER BY
 	2 DESC;
-```
-![OUTPUT](https://github.com/prashanthkumarjoshi/SQL_PROJECT_3/blob/main/images/Q_2_output.png)
+
+--SECOND APPROACH--
+
+SELECT
+	FLOOR(EXTRACT(HOUR FROM order_time) / 2) * 2 AS start_time,
+	FLOOR(EXTRACT(HOUR FROM order_time) / 2) * 2 +2 AS end_time,
+	COUNT(order_id) AS order_count
+FROM
+	orders
+GROUP BY
+	1,
+	2
+ORDER BY
+	3 DESC;
+
+  ```
+</details>
+<details>
+<summary><strong>Expected Output</strong>:Retrieving the count of orders placed within each 2-hour time slot throughout the day.</summary>
+<br><strong>Query Output</strong>
+ <br> <img src="https://github.com/prashanthkumarjoshi/SQL_PROJECT_3/blob/main/images/Q_2_output.png">
+</details>
 
 
 ### Medium to Hard (5 Questions)
