@@ -51,7 +51,8 @@ Develop complex queries to analyze and retrieve specific data:
 ## Business problems and Queries for solution
 ### Q1. Write a Query to find the top 5   most frequently ordered dishes by customer called  "Akhil Reddy" in the last 1 year.
 <details><summary>
-<strong><bold>Description</bold></strong>: Return the records of last 1 year with customer_id, customer_name,dishes and total count of dishes.</summary>
+<strong>Description</strong>: Return the records of last 1 year with customer_id, customer_name,dishes and total count of dishes.</summary>
+<br><strong>SQL Code</strong>
 
   ```sql
 
@@ -86,7 +87,7 @@ Develop complex queries to analyze and retrieve specific data:
 </details>
 <details>
 <summary><strong>Expected Output</strong>: A list of top 5 most frequently orderd dishes by Customer Name called "Akhil Reddy".</summary>
-<strong>Query Output<strong>
+<br><strong>Query Output</strong>
  <br> <img src="https://github.com/prashanthkumarjoshi/SQL_PROJECT_3/blob/main/images/Q_1_output.png" height="200">
 </details>
     
