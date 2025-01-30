@@ -86,7 +86,7 @@ Develop complex queries to analyze and retrieve specific data:
 </details>
 <details>
 <summary><strong>Expected Output</strong>: A list of top 5 most frequently orderd dishes by Customer Name called "Akhil Reddy".</summary>
-Query Output
+<strong>Query Output<strong>
  <br> <img src="https://github.com/prashanthkumarjoshi/SQL_PROJECT_3/blob/main/images/Q_1_output.png" height="200">
 </details>
     
