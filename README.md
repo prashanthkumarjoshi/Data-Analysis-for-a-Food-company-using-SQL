@@ -83,10 +83,12 @@ Develop complex queries to analyze and retrieve specific data:
     ) AS t1
   WHERE
     RANK <= 5;
-<summary><strong>Click here to view the output image</strong></summary>
-![OUTPUT](https://github.com/prashanthkumarjoshi/SQL_PROJECT_3/blob/main/images/Q_2_output.png)
++ <details>
+    <summary><strong>Click here to view the output image</strong></summary>
+    ![OUTPUT](https://github.com/prashanthkumarjoshi/SQL_PROJECT_3/blob/main/images/Q_2_output.png)
+    </details>
 </details>
-</details>
+
 
 ### Q2. Popular time slots
 - **Description**: --Identify the time slots during which more orders are placed.Based on 2 hour interval.
