@@ -54,7 +54,7 @@ Develop complex queries to analyze and retrieve specific data:
 <strong><bold>Description</bold></strong>: Return the records of last 1 year with customer_id, customer_name,dishes and total count of dishes.</summary>
 
   ```sql
-  -`Sql Code`
+  `#SQL Code`
   SELECT
     customer_name,
     dishes,
