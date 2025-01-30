@@ -83,7 +83,7 @@ Develop complex queries to analyze and retrieve specific data:
   WHERE
     RANK <= 5;
     </details>
-    <details>
+    <details><sumary>Query Output</summary>
       ![OUTPUT](https://github.com/prashanthkumarjoshi/SQL_PROJECT_3/blob/main/images/Q_2_output.png)
     </details>
 
