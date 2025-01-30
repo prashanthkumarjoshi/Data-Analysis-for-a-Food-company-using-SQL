@@ -177,6 +177,37 @@ HAVING
 </details>
 
 
+### Q4. Write a query to find High value customer.
+<details><summary>
+<strong>Description</strong>: List the customers who hace spend more than 100K in total on food orders.</summary>
+<br><strong>SQL Code</strong>
+
+  ```sql
+
+SELECT
+	c.customer_id,
+	c.customer_name,
+	COUNT(order_id) AS total_count,
+	SUM(o.total_amount) AS total_spend 
+FROM
+	orders o
+LEFT JOIN customers c ON o.customer_id = c.customer_id 
+GROUP BY
+	1
+HAVING
+	COUNT(order_id) > 750;
+
+	3 DESC;
+
+  ```
+</details>
+<details>
+<summary><strong>Expected Output</strong>: Retrieving the return customer_name and customer_id who have spend more than 100K based on highest value.</summary>
+<br><strong>Query Output</strong>
+ <br> <img src="https://github.com/prashanthkumarjoshi/SQL_PROJECT_3/blob/main/images/Q_4_output.png">
+</details>
+
+
 ### Medium to Hard (5 Questions)
 1. Identify the least selling product in each country for each year.
 2. Calculate how many warranty claims were filed within 180 days of a product sale.
