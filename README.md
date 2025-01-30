@@ -82,6 +82,7 @@ Develop complex queries to analyze and retrieve specific data:
     ) AS t1
   WHERE
     RANK <= 5;
+    ```
     ###Solution
     + <details>
         <sumary>Click heary to view Output image</summary>
