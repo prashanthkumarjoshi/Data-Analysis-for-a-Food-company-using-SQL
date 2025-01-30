@@ -52,8 +52,7 @@ Develop complex queries to analyze and retrieve specific data:
 ### Q1.Write a Query to find the top 5 most frequently ordered dishes by customer called  "Akhil Reddy" in the last 1 year
 - **Description**: Return the records of last 1 year with customer_id, customer_name,dishes and total count of dishes.
 - **Expected Output**: A list of top 5 most frequently orderd dishes by Customer Name called "Akhil Reddy".
-<details>
-  <summary><strong>Click here to view the SQL code</strong></summary>
+<details> <summary><strong>Click here to view the SQL code</strong></summary>
 
   ```sql
   SELECT
@@ -83,11 +82,11 @@ Develop complex queries to analyze and retrieve specific data:
     ) AS t1
   WHERE
     RANK <= 5;
-+ <details>
-    <summary><strong>Click here to view the output image</strong></summary>
-    ![OUTPUT](https://github.com/prashanthkumarjoshi/SQL_PROJECT_3/blob/main/images/Q_2_output.png)
     </details>
-</details>
+  <details>
+    ![OUTPUT](https://github.com/prashanthkumarjoshi/SQL_PROJECT_3/blob/main/images/Q_2_output.png)
+  </details>
+
 
 
 ### Q2. Popular time slots
