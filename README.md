@@ -50,7 +50,7 @@ Develop complex queries to analyze and retrieve specific data:
 
 #### Business problems and Queries for solution
 <details>
-<summary><strong><p style="font-size: 25px;"> Q1. Write a Query to find the top 5   most frequently ordered dishes by customer called  "Akhil Reddy" in the last 1 year.</p></strong>
+<summary><strong><p style="font-size: 25px;">Q1. Write a Query to find the top 5   most frequently ordered dishes by customer called  "Akhil Reddy" in the last 1 year.</p></strong>
 <strong>Description</strong>: Return the records of last 1 year with customer_id, customer_name,dishes and total count of dishes.
 <br>
 <strong>Expected Output</strong>: A list of top 5 most frequently orderd dishes by Customer Name called "Akhil Reddy".</summary>
