@@ -146,6 +146,36 @@ ORDER BY
  <br> <img src="https://github.com/prashanthkumarjoshi/SQL_PROJECT_3/blob/main/images/Q_2_output.png">
 </details>
 
+### Q3. Write a query to find Order value analysis.
+<details><summary>
+<strong>Description</strong>: Find the average order value per customer who has palced more than 750 orders.</summary>
+<br><strong>SQL Code</strong>
+
+  ```sql
+
+SELECT
+	c.customer_id,
+	c.customer_name,
+	COUNT(order_id) AS total_count,
+	SUM(o.total_amount) AS total_spend 
+FROM
+	orders o
+LEFT JOIN customers c ON o.customer_id = c.customer_id 
+GROUP BY
+	1
+HAVING
+	COUNT(order_id) > 750;
+
+	3 DESC;
+
+  ```
+</details>
+<details>
+<summary><strong>Expected Output</strong>:Retrieving the Customername and Average order value(AOV).</summary>
+<br><strong>Query Output</strong>
+ <br> <img src="https://github.com/prashanthkumarjoshi/SQL_PROJECT_3/blob/main/images/Q_3_output.png">
+</details>
+
 
 ### Medium to Hard (5 Questions)
 1. Identify the least selling product in each country for each year.
