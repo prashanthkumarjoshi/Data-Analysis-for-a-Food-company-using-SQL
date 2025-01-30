@@ -53,35 +53,38 @@ Develop complex queries to analyze and retrieve specific data:
 Q### Q1.Write a Query to find the top 5 most frequently ordered dishes by customer called  "Akhil Reddy" in the last 1 year
 - **Description**: Return the records of last 1 year with customer_id, customer_name,dishes and total count of dishes.
 - **Expected Output**: A list of top 5 most frequently orderd dishes by Customer Name called "Akhil Reddy".
-```sql
-SELECT
-	customer_name,
-	dishes,
-	total_dishes
-FROM
-	(SELECT
-			c.customer_id,
-			c.customer_name,
-			o.order_item AS dishes,
-			COUNT(order_id) AS total_dishes,
-			DENSE_RANK() OVER (ORDER BY COUNT(order_id) DESC) AS RANK
-		FROM
-			orders o
-			JOIN customers c ON o.customer_id = c.customer_id
-		WHERE
-			o.order_date >= CURRENT_DATE - INTERVAL '1 Year'
-			AND c.customer_name = 'Akhil Reddy'
-		GROUP BY
-			1,
-			2,
-			3
-		ORDER BY
-			1,
-			4 DESC
-	) AS t1
-WHERE
-	RANK <= 5;
-```
+<details>
+  <summary>Click here to view the SQL code</summary>
+
+  ```sql
+  SELECT
+    customer_name,
+    dishes,
+    total_dishes
+  FROM
+    (SELECT
+        c.customer_id,
+        c.customer_name,
+        o.order_item AS dishes,
+        COUNT(order_id) AS total_dishes,
+        DENSE_RANK() OVER (ORDER BY COUNT(order_id) DESC) AS RANK
+      FROM
+        orders o
+        JOIN customers c ON o.customer_id = c.customer_id
+      WHERE
+        o.order_date >= CURRENT_DATE - INTERVAL '1 Year'
+        AND c.customer_name = 'Akhil Reddy'
+      GROUP BY
+        1,
+        2,
+        3
+      ORDER BY
+        1,
+        4 DESC
+    ) AS t1
+  WHERE
+    RANK <= 5;
+</details>
 ### Q2. Popular time slots
 - **Description**: --Identify the time slots during which more orders are placed.Based on 2 hour interval.
 - **Expected Output**: Creating time slot for 2 hours using 'Order time' and total number of orders during the slot.
