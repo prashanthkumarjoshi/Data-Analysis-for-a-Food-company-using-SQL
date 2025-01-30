@@ -48,9 +48,9 @@ The dataset comprises five tables: `Customers`, `Resturants`, `riders`, `Orders`
 Solve day-to-day complex business problems of online food delivery business using POSTGRESS SQL.
 Develop complex queries to analyze and retrieve specific data:
 
-## Business problems and Queries for solution
-#### Use collapsible drop down to view business problems and solutions
-### Q1. Write a Query to find the top 5   most frequently ordered dishes by customer called  "Akhil Reddy" in the last 1 year.
+# Business problems and Queries for solution
+### Use collapsible drop down to view business problems and solutions
+## Q1. Write a Query to find the top 5   most frequently ordered dishes by customer called  "Akhil Reddy" in the last 1 year.
 <details><summary>
 <strong>Description</strong>: Return the records of last 1 year with customer_id, customer_name,dishes and total count of dishes.</summary>
 <br><strong>SQL Code</strong>
@@ -93,7 +93,7 @@ Develop complex queries to analyze and retrieve specific data:
 </details>
     
 
-### Q2. Write a query to find the Popular time slots.
+## Q2. Write a query to find the Popular time slots.
 <details><summary>
 <strong>Description</strong>: Identify the time slots during which more orders are placed.Based on 2 hour interval.</summary>
 <br><strong>SQL Code</strong>
@@ -146,7 +146,7 @@ ORDER BY
  <br> <img src="https://github.com/prashanthkumarjoshi/SQL_PROJECT_3/blob/main/images/Q_2_output.png">
 </details>
 
-### Q3. Write a query to find Order value analysis.
+## Q3. Write a query to find Order value analysis.
 <details><summary>
 <strong>Description</strong>: Find the average order value per customer who has palced more than 750 orders.</summary>
 <br><strong>SQL Code</strong>
@@ -177,7 +177,7 @@ HAVING
 </details>
 
 
-### Q4. Write a query to find High value customer.
+## Q4. Write a query to find High value customer.
 <details><summary>
 <strong>Description</strong>: List the customers who hace spend more than 100K in total on food orders.</summary>
 <br><strong>SQL Code</strong>
@@ -207,7 +207,7 @@ HAVING
  <br> <img src="https://github.com/prashanthkumarjoshi/SQL_PROJECT_3/blob/main/images/Q_4_output.png">
 </details>
 
-### Q5. Write a query to find Orders without Delivery.
+## Q5. Write a query to find Orders without Delivery.
 <details><summary>
 <strong>Description</strong>: Identifying the orders that were placed but not deliverd.</summary>
 <br><strong>SQL Code</strong>
@@ -242,7 +242,7 @@ ORDER BY
  <br> <img src="https://github.com/prashanthkumarjoshi/SQL_PROJECT_3/blob/main/images/Q_5_output.png">
 </details>
 
-### Q6. Write a query for Revenue Ranking.
+## Q6. Write a query for Revenue Ranking.
 <details><summary>
 <strong>Description</strong>: Rank resturants by their total revenue from the last year, including their name,
 total revenue and rank with in their city.</summary>
@@ -281,7 +281,7 @@ WHERE
  <br> <img src="https://github.com/prashanthkumarjoshi/SQL_PROJECT_3/blob/main/images/Q_6_output.png">
 </details>
 
-### Q7. Write a query for Most Popluar Dish by City
+## Q7. Write a query for Most Popluar Dish by City
 <details><summary>
 <strong>Description</strong>: Identify the most popluar dish in each city based on the number of the orders.</summary>
 <br><strong>SQL Code</strong>
@@ -319,7 +319,7 @@ WHERE
  <br> <img src="https://github.com/prashanthkumarjoshi/SQL_PROJECT_3/blob/main/images/Q_7_output.png">
 </details>
 
-### Q8. Write a query to generate Customer churn
+## Q8. Write a query to generate Customer churn
 <details><summary>
 <strong>Description</strong>: Identify the customers who havent placed orders in 2024 but in 2023.</summary>
 <br><strong>SQL Code</strong>
@@ -351,7 +351,7 @@ group by
 </details>
 
 
-### Q9. Write a query to generate genrate Cancellation Rate Comparrison Report
+## Q9. Write a query to generate genrate Cancellation Rate Comparrison Report
 <details><summary>
 <strong>Description</strong>: Calcuate and compare the order cancellation rate for each resturant between the current year and the previous year.</summary>
 <br><strong>SQL Code</strong>
@@ -431,9 +431,7 @@ FROM
  <br> <img src="https://github.com/prashanthkumarjoshi/SQL_PROJECT_3/blob/main/images/Q_9_output.png">
 </details>
 
-
-
-### Q10. Write a query to find Rider average delivery_time.
+## Q10. Write a query to find Rider average delivery_time.
 <details><summary>
 <strong>Description</strong>: Determine each rider's  average delivery time.</summary>
 <br><strong>SQL Code</strong>
@@ -479,10 +477,7 @@ GROUP BY
  <br> <img src="https://github.com/prashanthkumarjoshi/SQL_PROJECT_3/blob/main/images/Q_10_output.png">
 </details>
 
-
-
-
-### Q11. Write a Query to find  Monthly Resturant growth Ratio.
+## Q11. Write a Query to find  Monthly Resturant growth Ratio.
 <details><summary>
 <strong>Description</strong>: Calculate each resturants growth ratio based on the total number of delivered orders since it's joining.</summary>
 <br><strong>SQL Code</strong>
@@ -526,9 +521,7 @@ from
  <br> <img src="https://github.com/prashanthkumarjoshi/SQL_PROJECT_3/blob/main/images/Q_11_output.png">
 </details>
 
-
-
-### Q12. Write a Query to generate Customer Segmentation Report.
+## Q12. Write a Query to generate Customer Segmentation Report.
 <details><summary>
 <strong>Description</strong>: Customer Segmentation: Segment customers into 'Gold' or 'Silver' groups based on their total spending
 compared to the average order value(AOV). If a customer's total spending exceeds the AOV, label them as 'Gold';otherwise, label tehm as 'Silver'. 
@@ -565,7 +558,7 @@ GROUP BY
  <br> <img src="https://github.com/prashanthkumarjoshi/SQL_PROJECT_3/blob/main/images/Q_13_output.png" height="200">
 </details>
 
-### Q13. Write a Query to find the Rider Monthly Earning.
+## Q13. Write a Query to find the Rider Monthly Earning.
 <details><summary>
 <strong>Description</strong>: Calculate each rider's total monthly earning, assuming earn 8% of the oder amount.</summary>
 <br><strong>SQL Code</strong>
@@ -607,7 +600,7 @@ GROUP BY
  <br> <img src="https://github.com/prashanthkumarjoshi/SQL_PROJECT_3/blob/main/images/Q13_output.png">
 </details>
 
-### Q14. Rider Rating Analysis.
+## Q14. Rider Rating Analysis.
 <details><summary>
 <strong>Description</strong>: --find the number of 5-star,Four-star, and 3-star ratings each rider has.
 --riders receive this rating based on delivery time.
@@ -672,7 +665,7 @@ ORDER BY
  <br> <img src="https://github.com/prashanthkumarjoshi/SQL_PROJECT_3/blob/main/images/Q_14_output.png">
 </details>
 
-### Q15.  Order Frequency by Day.
+## Q15.  Order Frequency by Day.
 <details><summary>
 <strong>Description</strong>: Analyze Order frequency per day of the week and identify the peak day for each resturant </summary>
 <br><strong>SQL Code</strong>
@@ -705,7 +698,7 @@ WHERE rank = 1
  <br> <img src="https://github.com/prashanthkumarjoshi/SQL_PROJECT_3/blob/main/images/Q_15_output.png">
 </details>
 
-### Q16.  Customer Life Time value
+## Q16.  Customer Life Time value
 <details><summary>
 <strong>Description</strong>: Calculate the total Revenue generated by the each customers on all the orders </summary>
 <br><strong>SQL Code</strong>
@@ -736,7 +729,7 @@ ORDER BY
  <br> <img src="https://github.com/prashanthkumarjoshi/SQL_PROJECT_3/blob/main/images/Q_16_output.png">
 </details>
 
-### Q17. Monthly Sales trend
+## Q17. Monthly Sales trend
 <details><summary>
 <strong>Description</strong>: Identify sales trends by comparing each months total sales to the previous month. </summary>
 <br><strong>SQL Code</strong>
@@ -760,7 +753,6 @@ group by
 <br><strong>Query Output</strong>
  <br> <img src="https://github.com/prashanthkumarjoshi/SQL_PROJECT_3/blob/main/images/Q_17_output.png">
 </details>
-
 
 ## Q18. Rider Efficieny
 <details><summary>
@@ -805,7 +797,7 @@ FROM
  <br> <img src="https://github.com/prashanthkumarjoshi/SQL_PROJECT_3/blob/main/images/Q_18_output.png">
 </details>
 
-### Q19. Order Item Popularity
+## Q19. Order Item Popularity
 <details><summary>
 <strong>Description</strong>: Track the popularity of specific order items over a time and identify seasonal demand spikes. </summary>
 <br><strong>SQL Code</strong>
@@ -842,7 +834,7 @@ ORDER BY
  <br> <img src="https://github.com/prashanthkumarjoshi/SQL_PROJECT_3/blob/main/images/Q_19_output.png">
 </details>
 
-### Q20. Rank each city based on the total revenue for the previous year 2023
+## Q20. Rank each city based on the total revenue for the previous year 2023
 <details><summary>
 <strong>Description</strong>: Ranking each city based on the total revenue for the previous year 2023. </summary>
 <br><strong>SQL Code</strong>
